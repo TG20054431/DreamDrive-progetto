@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DreamDrive | Registrazione</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="login-register_page.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center">
+          <img src="../index_page/logo_bianco.jpg" alt="DreamDrive" height="70">
+        </a>
+        <div class="d-flex">
+          <button onclick="history.back()" class="btn btn-outline-light me-3 d-none d-md-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left me-2" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+            </svg>
+            Indietro
+          </button>
+          <a href="../index_page/index.html" class="btn btn-outline-light me-3 d-none d-md-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill me-2" viewBox="0 0 16 16">
+              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+            </svg>
+            Home
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header bg-teal text-white text-center">
+              <h4 class="mb-0">Registrati</h4>
+            </div>
+            <div class="card-body">
+              <form id="registerForm" onsubmit="return validateAndRegister(event)">
+                <div class="mb-3">
+                  <label for="registerName" class="form-label">Nome e Cognome</label>
+                  <input type="text" class="form-control" id="registerName" value="Mario Rossi" readonly>
+                </div>
+                <div class="mb-3">
+                  <label for="birthDate" class="form-label">Data di nascita</label>
+                  <input type="date" class="form-control" id="birthDate" required onchange="validateAge()">
+                  <div class="text-danger mt-1 d-none" id="ageError">
+                    Devi avere almeno 18 anni per registrarti.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="registerEmail" value="demo@example.com" readonly>
+                </div>
+                <div class="mb-3">
+                  <label for="registerPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="registerPassword" value="********" readonly>
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Conferma Password</label>
+                  <input type="password" class="form-control" id="confirmPassword" value="********" readonly>
+                </div>
+                <button type="submit" class="btn btn-teal w-100 mb-3" id="registerButton" disabled>Registrati</button>
+                <div class="text-center">
+                  <p class="mb-0">Hai già un account?</p>
+                  <a href="login.html" class="text-teal">Accedi qui</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="utility.js"></script>
+    <script>
+      function validateAge() {
+        const birthDate = new Date(document.getElementById('birthDate').value);
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+        }
+
+        const ageError = document.getElementById('ageError');
+        const registerButton = document.getElementById('registerButton');
+
+        if (age < 18) {
+          ageError.classList.remove('d-none');
+          registerButton.disabled = true;
+        } else {
+          ageError.classList.add('d-none');
+          registerButton.disabled = false;
+        }
+      }
+
+      function validateAndRegister(event) {
+        event.preventDefault();
+        window.location.href = '../servizi/services.html';
+        return true;
+      }
+    </script>
+  </body>
+</html>

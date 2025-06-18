@@ -1,0 +1,160 @@
+.navbar {
+    height: 90px;
+    font-family: "Tektur", sans-serif;
+}
+
+h1, p {
+    font-family: "Tektur", sans-serif;
+}
+
+.btn-teal {
+    background-color: teal;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-family: "Tektur", sans-serif;
+}
+
+.btn-teal:hover {
+    background-color: #004d4d;
+    color: white;
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+.lead {
+    color: #666;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-family: "Tektur", sans-serif;
+    color: #333;
+}
+
+.card-text {
+    font-family: "Tektur", sans-serif;
+    color: #666;
+}
+
+.footer {
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #000; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    z-index: 1000; 
+    font-family: "Tektur", sans-serif;
+}
+
+.footer a {
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.filters {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-select {
+    font-family: "Tektur", sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        padding: 15px;
+    }
+    
+    .form-select {
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-img-fixed {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #car-grid {
+        padding: 0 15px;
+    }
+
+    .filters {
+        margin: 15px 0;
+    }
+
+    .form-select {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+    .btn-teal {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-fixed {
+        height: 180px;
+    }
+
+    .filters .col-md-4 {
+        margin-bottom: 10px;
+    }
+
+    .text-success {
+        font-size: 14px;
+    }
+}

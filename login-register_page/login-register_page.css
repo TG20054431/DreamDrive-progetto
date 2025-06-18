@@ -1,0 +1,85 @@
+.navbar {
+    height: 90px;
+    font-family: "Tektur", sans-serif;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: "Tektur", sans-serif;
+}
+
+.card-header {
+    padding: 1rem;
+}
+
+.card-header h4 {
+    font-family: "Tektur", sans-serif;
+    font-weight: 500;
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+.btn-teal {
+    background-color: teal;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-family: "Tektur", sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-teal:hover {
+    background-color: #004d4d;
+    color: white;
+}
+
+.form-label {
+    font-family: "Tektur", sans-serif;
+    color: #333;
+    font-weight: 500;
+}
+
+.text-teal {
+    color: teal;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Tektur", sans-serif;
+}
+
+.text-teal:hover {
+    color: #004d4d;
+}
+
+p {
+    font-family: "Tektur", sans-serif;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 1rem;
+    font-family: "Tektur", sans-serif;
+}
+
+.form-control:focus {
+    border-color: teal;
+    box-shadow: 0 0 0 0.2rem rgba(0, 128, 128, 0.25);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}

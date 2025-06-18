@@ -1,0 +1,92 @@
+.navbar{
+
+    height: 90px;
+    font-family: "Tektur", sans-serif;
+}
+
+.intro-section {
+    background-color: white; 
+    color: #333; 
+    padding: 20px 0;
+    margin-top: 40px;
+    font-family: "Tektur", sans-serif; 
+}
+
+.intro-section h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 10px; 
+}
+
+.intro-section p {
+    font-size: 1.2rem; 
+    margin: 0;  
+}
+
+.card {
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-link {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.card-link:hover {
+    transform: translateY(-5px);
+    color: white;
+    text-decoration: none;
+}
+
+.card-body {
+
+    background-color: teal;
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    font-family: "Tektur", sans-serif;
+    padding: 15px;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-body .card-text {
+    color: white;
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+.btn-teal {
+    background-color: teal;
+    color: white;
+}
+
+.card .btn {
+    color: white !important;
+    text-decoration: none;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card .btn:focus,
+.card .btn:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card .btn:hover {
+    color: white !important;
+    text-decoration: none;
+}

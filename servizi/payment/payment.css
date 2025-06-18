@@ -1,0 +1,67 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Tektur', sans-serif;
+}
+
+.btn-teal {
+    background-color: teal;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-teal:hover {
+    background-color: teal;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.footer a {
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+#booking-summary {
+    display: block !important;
+    margin-bottom: 2rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.payment-methods {
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,55 @@
+.navbar {
+    height: 90px;
+    font-family: "Tektur", sans-serif;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    font-family: "Tektur", sans-serif;
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+.btn-teal {
+    background-color: teal;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-family: "Tektur", sans-serif;
+}
+
+.btn-teal:hover {
+    background-color: #004d4d;
+    color: white;
+}
+
+.form-label {
+    font-family: "Tektur", sans-serif;
+}
+
+.text-teal {
+    color: teal;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.text-teal:hover {
+    color: #004d4d;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}

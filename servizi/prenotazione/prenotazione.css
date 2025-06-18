@@ -1,0 +1,60 @@
+.navbar {
+    height: 90px;
+    font-family: "Tektur", sans-serif;
+}
+
+h1, label, p {
+    font-family: "Tektur", sans-serif;
+}
+
+.booking-form {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-control, .form-select {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Tektur", sans-serif;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: teal;
+    box-shadow: 0 0 0 0.2rem rgba(0, 128, 128, 0.25);
+}
+
+.btn-teal {
+    background-color: teal;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-family: "Tektur", sans-serif;
+}
+
+.btn-teal:hover {
+    background-color: #004d4d;
+    color: white;
+}
+
+.footer {
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    font-family: "Tektur", sans-serif;
+}
+
+.footer a {
+    margin: 0;
+    padding: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
