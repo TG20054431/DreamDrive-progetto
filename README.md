@@ -20,6 +20,22 @@ Per tutti e due i servizi vengono salvate le varie informazioni in una tabella d
 
 L'utente non registrato ha la possibilità di navigare all'interno del sito per scoprire le tipologie di servizio, visionare una gallery dove sono contenute le varie auto disponibili, leggere le recensioni degli utenti e creare un nuovo account.
 
+# 🌀 Procedura di installazione
+
+📁 Nella cartella del progetto, per procedere con l'installazione, è necessario installare le dipendenze necessarie tramite:
+
+npm install
+
+far partire l'applicazione tramite:
+
+npm start
+
+aprire l'applicazione tramite:
+
+npm run dev
+
+una volta fatta partire verrà creato un link del tipo http://localhost/3000, al quale sarà disponibile l'applicazione web.
+
 # 🙋🏻‍♂️ Autore
 
-Timothy Giolito, studente di Informatica presso l'Università del Piemonte Orientale sede di Vercelli.
+Timothy Giolito, studente di Informatica presso l'Università del Piemonte Orientale, sede di Vercelli.
