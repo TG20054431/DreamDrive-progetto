@@ -1,6 +1,6 @@
-# 🏁 DreamDrive
+# 🏁 DreamDrive 🚗
 
-Applicazione web che permette la prenotazione di Noleggio Auto fino a 5 gg o Track-Day in circuiti autorizzati.
+Applicazione web che permette la prenotazione di Noleggio Auto o Track-Day in circuiti autorizzati.
 
 # 👁 Admin
 
