@@ -19,3 +19,7 @@ Per tutti e due i servizi vengono salvate le varie informazioni in una tabella d
 # 👤 Utente non registrato 
 
 L'utente non registrato ha la possibilità di navigare all'interno del sito per scoprire le tipologie di servizio, visionare una gallery dove sono contenute le varie auto disponibili, leggere le recensioni degli utenti e creare un nuovo account.
+
+# 🙋🏻‍♂️ Autore
+
+Timothy Giolito, studente di Informatica presso l'Università del Piemonte Orientale sede di Vercelli.
