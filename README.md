@@ -31,7 +31,7 @@ All'interno del profilo utente sono disponibili le informazioni riguardo l'utent
 
 # 👤 Utente non registrato 
 
-L'utente non registrato ha la possibilità di navigare all'interno del sito per scoprire le tipologie di servizio, visionare una gallery dove sono contenute le varie auto disponibili, leggere le recensioni degli utenti e creare un nuovo account.
+L'utente non registrato ha la possibilità di navigare all'interno del sito per scoprire le tipologie di servizio, visionare una gallery dove sono contenute le varie auto disponibili, leggere le recensioni degli utenti, visionare una listino prezzi e creare un nuovo account.
 
 # 🌀 Procedura di installazione
 
